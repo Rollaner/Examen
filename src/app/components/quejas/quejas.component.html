@@ -1,0 +1,18 @@
+<div *ngIf="!this.submmited">
+<form [formGroup]="quejasForm" (ngSubmit)="onSubmit()">
+    <span><div> <b>Nombre Completo:</b></div> <input type="text" formControlName='Nombre'></span>
+    <div id="error" *ngIf="this.quejasForm.invalid && this.quejasForm.touched">{{getNameMsg()}}</div>
+    <span ><div><b>País:</b></div> 
+        <select formControlName='Pais'>
+            <option value="" disabled selected hidden>Seleccione un pais</option>
+            <option *ngFor="let pais of Paises" [ngValue]="pais">{{pais}}</option>
+        </select></span>
+    <div id="error" *ngIf="this.quejasForm.invalid && this.quejasForm.touched">{{getSelectMsg()}}</div>
+    <span><div><b>Observación:</b></div> <textarea  cols="40" formControlName='Observacion' rows="5"></textarea></span>
+    <div id="error" *ngIf="this.quejasForm.invalid && this.quejasForm.touched">{{getAreaMsg()}}</div>
+    <div><button type="submit"><b>Enviar</b></button></div>
+</form>
+</div>
+<div *ngIf="this.submmited">
+    <p><b>Su queja fue recibida. Muy pronto nos estaremos comunicando con usted.</b></p>
+</div>

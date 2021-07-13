@@ -1,0 +1,23 @@
+li#libro{
+    padding: 10px;
+    padding-bottom: 1px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column ;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    text-align: center;
+    height: 450px;
+    width: 250px;
+}
+
+img{
+    max-height: 300px;
+}
+
+span{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

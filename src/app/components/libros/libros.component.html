@@ -1,0 +1,11 @@
+<span>
+<ul *ngFor="let libro of libros">
+        <li id="libro">
+            <div><b>{{libro.titulo}}</b></div>
+            <img src="assets/{{libro.image}}" alt="{{libro.image}}"> 
+            <div> Autor: {{libro.autor}}</div>
+            <div> Paginas: {{libro.pages}}</div>
+        </li>
+</ul>
+</span>
+

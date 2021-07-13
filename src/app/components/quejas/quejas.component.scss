@@ -1,0 +1,56 @@
+div p{
+    text-align: justify;
+    display: flex;
+    float: left;
+    word-wrap: normal;
+    margin-left: 10%;
+    padding-right: 65%;
+}
+div form{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    word-wrap: normal;
+    margin-left: 10%;
+}
+div form #error{
+    margin-left: 6.64cm;
+    color: rgba(248, 7, 7, 0.719);
+    font-style: inherit;
+}
+div form button{
+    margin-top: 1cm;
+    margin-left: 6.64cm;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    background-color: white;
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+div form span{
+    display: inline-flex;
+    margin-bottom: 0.5cm;
+    flex-direction: row;
+    margin-top: 0.5cm;
+}
+div form span input{
+    margin-left: 3cm;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    width: 300px;
+}
+div form span textarea{
+    margin-left: 4cm;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+}
+div form span select{
+    margin-left: 5.9cm;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+}
